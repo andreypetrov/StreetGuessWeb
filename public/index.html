@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--<script src="js/teleporter.js"></script>-->
+    <script src="js/modules/app.module.js"></script>
+    <script src="js/modules/app.core.module.js"></script>
+    <script src="js/services/dataservice.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+
+</head>
+<body>
+
+
+Hello World
+
+
+<div ng-app="app" ng-cloak>
+    <div ng-controller="MainController as main">
+        <p>Name: <input type="text" ng-model="main.name"></p>
+        <p ng-bind="main.name"></p>
+    </div>
+
+</div>
+
+</body>
+</html>
